@@ -117,7 +117,7 @@ namespace VendingMachine.Test.UnitTests
                     {
                         ProductId = 1,
                         ProductName = "Pepsi",
-                        Price = 25
+                        Price = 35
                     }
                 }
             };
@@ -141,7 +141,7 @@ namespace VendingMachine.Test.UnitTests
 
             var result = await _Service.Calculate(customerProducts, customerMoney);
 
-            Assert.Equal(55, result.Item2);
+            Assert.Equal(45, result.Item2);
         }
 
         [Fact]
@@ -161,7 +161,7 @@ namespace VendingMachine.Test.UnitTests
                     {
                         ProductId = 1,
                         ProductName = "Pepsi",
-                        Price = 25
+                        Price = 35
                     }
                 }
             };
@@ -205,7 +205,7 @@ namespace VendingMachine.Test.UnitTests
                     {
                         ProductId = 1,
                         ProductName = "Pepsi",
-                        Price = 25
+                        Price = 35
                     }
                 }
             };
@@ -217,7 +217,7 @@ namespace VendingMachine.Test.UnitTests
                     new InsertedMoney()
                     {
                         Type = MoneyType.Bills,
-                        Amount = 50
+                        Amount = 100
                     },
                     new InsertedMoney()
                     {
