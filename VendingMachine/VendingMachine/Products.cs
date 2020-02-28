@@ -20,7 +20,7 @@ namespace VendingMachine
                 {
                     ProductId = 2,
                     ProductName = "Pepsi",
-                    Price = 25
+                    Price = 35
                 },
                 new Product
                 {
